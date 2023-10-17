@@ -14,47 +14,32 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 // 1
-            func sum () -> Int {
-                let a = 6
-                let b = 3
-                return a+b
-            }
-            print (sum())
+        
+        func sum(_ x: Int, _ y : Int) -> Int{
+            return x + y
+        }
+        func sum(_ x: Double, _ y : Double) -> Double{
+            return x * y
+        }
+        
+        print (sum(5, 4))
+        print (sum(5.0, 4.0))
+           
+        func sum2(_ a: Int, _ b : Int) -> Int{
+            return a - b
+        }
+        func sum2(_ a: Double, _ b : Double) -> Double{
+            return a / b
+        }
+        
+        print (sum2(5, 4))
+        print (sum2(5.0, 4.0))
 
-
-
-            func division () -> Int {
-                let c = 5
-                let d = 5
-                return c/d
-            }
-            print(division())
-
-
-
-            func subtraction () -> Double {
-                let a = 6.3
-                let b = 3.5
-                return a-b
-            }
-            print(subtraction())
-
-
-
-            func multiplication () -> Double {
-                let a = 6.3
-                let b = 3.5
-                return a*b
-            }
-            print(multiplication())
-
-
-
-            func sum(_ a: Int, _ b : Int) -> Int{
+            func sum1(_ a: Int, _ b : Int) -> Int{
                 return a + b
             }
 
-            func sum(_ a : Int, _ b : Int) -> Double {
+            func sum1(_ a : Int, _ b : Int) -> Double {
                 return  Double(a * b)
             }
             let y : Int = sum(3, 2)
@@ -80,10 +65,10 @@ class ViewController: UIViewController {
 
 //3
 
-            func comparison ( char : String , charTo : String) -> Bool {
-               char == charTo
+            func equtable  ( char : String , charTo : String) -> Bool {
+                char.count > charTo.count
             }
-            print(comparison(char: "ввш", charTo: "абв"))
+            print(equtable(char: "ввш", charTo: "абв"))
             
         
 
